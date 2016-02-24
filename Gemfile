@@ -35,8 +35,11 @@ group :development, :test do
   gem 'byebug'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-  gem 'web-console', '~> 2.0'
   gem 'spring', '1.1.3'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0', group: :development
 end
 
 group :test do
