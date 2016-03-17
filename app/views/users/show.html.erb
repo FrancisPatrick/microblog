@@ -5,7 +5,7 @@
 <h1>
 	<!-- <%= gravatar_for @user %> -->
 	<avatar class="img-thumbnail">
-		<%= image_tag @user.avatar_url(:thumb).to_s %>
+		<%= image_tag @user.profile_picture_url(:thumb).to_s %>
 	</avatar>
 	<%= @user.name %>
 </h1>
