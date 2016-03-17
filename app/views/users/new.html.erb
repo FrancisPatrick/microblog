@@ -1,4 +1,5 @@
 <% provide(:title, "Sign up") %>
+<%= javascript_include_tag('profile_pic_preview.js') %>
 <h1>Sign up</h1>
 
 <div class="row">
@@ -19,6 +20,7 @@
 	<%= f.password_field :password_confirmation, class: 'form-control'  %>
 	<%= f.label :avatar, "Upload your profile picture" %>
 	<%= f.file_field :avatar, class: 'form-control' %>
+	
 	<%= f.submit "Create my account", class: "btn btn-primary" %>
 <%end%>
 </div>
