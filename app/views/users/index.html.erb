@@ -2,16 +2,6 @@
 <h1>All users</h1>
 <%= will_paginate %>
 <ul class="users">
-	<% @users.each do |user| %>
-		<li>
-			<%= if profile_picture_empty user.profile_picture_url(:thumb).to_s
-					gravatar_for user
-				else
-					image_tag user.profile_picture_url(:thumb).to_s 
-				end 
-			%>
-			<%= link_to user.name, user %>
-		</li>
-	<% end %>
+	<%= render @users %>
 </ul>
 <%= will_paginate %>
