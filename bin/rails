@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby.exe
-require_relative '../config/ssl'
 APP_PATH = File.expand_path('../../config/application', __FILE__)
 require_relative '../config/boot'
+require_relative '../config/ssl'
 require 'rails/commands'
