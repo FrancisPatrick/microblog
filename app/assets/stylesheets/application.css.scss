@@ -138,13 +138,16 @@ aside{
 			letter-spacing: -1px;
 			margin-bottom: 3px;
 			margin-top: 0px;
-
 			avatar {
 				float: left;
 				margin-right: 10px;
 			}
 		}
 	}
+}
+.gravatar {
+	float: left;
+	margin-right: 10px;
 }
 
 #edit_profile_picture.img-thumbnail {
